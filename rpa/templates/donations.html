@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Doações</title>
+</head>
+<body>
+    <h1>Lista de Doações</h1>
+    <ul>
+        {% for alimento in alimentos %}
+            <li>{{ alimento.item }} - {{ alimento.quantidade }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
